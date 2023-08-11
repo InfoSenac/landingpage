@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page - Exemplo</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <style>
+            body {
+                font-family: "Rajdhani", sans-serif;
+                background-image: url("metaverso1.jpg");
+                background-color: #cccccc;
+                background-repeat: no-repeat;
+                background-size: 3000px;
+            }
+
+            h1 {
+                display: none;
+                font-size: 150px;
+                color: azure;
+                text-shadow: 5px 5px #ff0000;
+                margin-top: 50px;
+                margin-left: 35px;
+            }
+
+            p {
+                display: none;
+                font-size: 60px;
+                color: aquamarine;
+                text-shadow: 5px 5px black;
+                margin-top: 50px;
+                margin-left: 35px;
+            }
+
+            .form-control {
+                border-radius: 50px;
+                height: 105px;
+                font-size: 30px;
+                margin-left: 40px;
+            }
+
+            .btn {
+                border-radius: 50px;
+                width: 200px;
+                color: #ccc;
+                font-size: 60px;
+                background-color: gray;
+                text-shadow: 5px 5px black;
+            }
+            .input-group {
+                width: 700px;
+                margin-top: 250px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                body {
+                    background-size: 20000px;
+                }
+                h1 {
+                    font-size: 70px;
+                }
+                p {
+                    font-size: 35px;
+                }
+
+                .input-group {
+                    width: 480px;
+                }
+
+                .form-control {
+                    height: 85px;
+                    font-size: 25px;
+                }
+
+                .btn {
+                    font-size: 50px;
+                    height: 85px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="col">
+            <div class="row">
+                <h1>Óculos 3D Lançamento do mercado chega ao Brasil</h1>
+            </div>
+        </div>
+
+        <div>
+            <p>Produto inovador e barato pra você comprar imediatamente!</p>
+        </div>
+        <div class="input-group mb-3" id="div1" style="display: none">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Insira o seu e-mail"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+            />
+            <div class="input-group-append">
+                <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    id="button-addon2"
+                >
+                    Enviar
+                </button>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                setTimeout(function () {
+                    $("h1").fadeIn(5000);
+                    $("p").fadeIn(10000);
+                    $("#div1").fadeIn(15000);
+                });
+            });
+        </script>
+    </body>
+</html>
